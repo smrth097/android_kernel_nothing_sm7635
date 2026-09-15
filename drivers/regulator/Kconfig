@@ -1461,6 +1461,25 @@ config REGULATOR_STW481X_VMMC
 	  This driver supports the internal VMMC regulator in the STw481x
 	  PMIC chips.
 
+config REGULATOR_SGM38120
+	tristate "SGM38120 camera LDO regulators"
+	depends on I2C
+	select REGMAP_I2C
+	help
+	  Seven-channel I2C LDO used to supply the camera sensors on the
+	  Nothing Phone (4a). The camera sensor nodes name these as their
+	  cam_vio / cam_vana / cam_vdig supplies, so without this driver they
+	  sit at waiting_for_supplier and never probe.
+
+config REGULATOR_WR1241
+	tristate "WR1241 camera LDO regulators"
+	depends on I2C
+	select REGMAP_I2C
+	help
+	  Four-channel I2C LDO used alongside the SGM38120 for the camera
+	  sensors on the Nothing Phone (4a). Two instances are fitted, one on
+	  each of the wide and ultrawide I2C buses.
+
 config REGULATOR_SY7636A
 	tristate "Silergy SY7636A voltage regulator"
 	depends on MFD_SY7636A

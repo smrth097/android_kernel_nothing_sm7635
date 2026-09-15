@@ -625,6 +625,17 @@ config NT_SECURE_STATE
 	help
 	  NT Secure State Driver.
 
+config NT_RPMB_STATE
+	tristate "NT RPMB State Driver"
+	help
+	  NT RPMB State Driver.
+
+config NOTH_HARDWARE_ID
+	tristate "Nothing hardware ID driver support"
+	help
+		Say Y here to support Nothing hardware ID driver
+		If unsure, say N
+
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"

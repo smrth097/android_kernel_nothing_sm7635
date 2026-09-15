@@ -966,6 +966,7 @@ comment "Simple LED drivers"
 source "drivers/leds/simple/Kconfig"
 
 comment "NT LED drivers"
+source "drivers/leds/aw20036_frogger/Kconfig"
 source "drivers/leds/aw20036/Kconfig"
 
 endif # NEW_LEDS

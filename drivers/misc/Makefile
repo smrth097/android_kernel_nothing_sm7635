@@ -78,3 +78,5 @@ obj-$(CONFIG_NT_ANT_CABLE_DET)		+= cable_detect.o
 obj-$(CONFIG_NT_SIM_SLOT_DET)		+= slot_detect.o
 obj-$(CONFIG_NT_OIS_VDD_CTRL)		+= ois_vdd_ctrl.o
 obj-$(CONFIG_NT_SECURE_STATE)		+= secure_state.o
+obj-$(CONFIG_NT_RPMB_STATE)		+= rpmb_state.o
+obj-$(CONFIG_NOTH_HARDWARE_ID)  += hardware_id.o
