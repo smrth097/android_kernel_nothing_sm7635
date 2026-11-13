@@ -4902,7 +4902,6 @@ static int battery_chg_probe(struct platform_device *pdev)
 								round_jiffies(10 * HZ));
 	write_property_id(bcdev, &bcdev->psy_list[PSY_TYPE_USB], NT_CHG_KEY_INFO, NT_GET_CHARGE_KEY_INFO);
 #endif
->>>>>>> 8f75f4fd78e9 (treewide: Import changes from V4.1-260309-1830)
 	schedule_work(&bcdev->usb_type_work);
 
 	rc = get_charge_control_en(bcdev);
